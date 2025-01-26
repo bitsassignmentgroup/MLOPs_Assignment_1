@@ -5,6 +5,8 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import mean_squared_error
 import joblib
 import pandas as pd
+import os
+
 
 # Load the Diabetes dataset
 df = pd.read_csv('dataset/diabetes_dataset_v0 copy.csv')
@@ -43,7 +45,9 @@ mse = mean_squared_error(y_test, predictions)
 print(f"Mean Squared Error: {mse}")
 
 # Log parameters, metrics, and model with MLflow
-mlflow.set_tracking_uri("./m3_logs")
+artifact_dir = os.path.join(os.getcwd(), "mlruns")
+os.makedirs(artifact_dir, exist_ok=True)
+mlflow.set_tracking_uri(artifact_dir)
 mlflow.set_experiment("diabetes_experiment")
 
 with mlflow.start_run():

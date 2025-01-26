@@ -5,7 +5,7 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY best_model.pkl app.py requirements.txt /app/
+COPY best_model.pkl app.py requirements.txt /app
 
 RUN pip install --upgrade pip
 
