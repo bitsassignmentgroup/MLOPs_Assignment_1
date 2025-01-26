@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/2d4f6209620a485b80dd7bbb19079666/artifacts
+end_time: 1737876563677
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: 2d4f6209620a485b80dd7bbb19079666
+run_name: brawny-koi-513
+run_uuid: 2d4f6209620a485b80dd7bbb19079666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737876557052
+status: 3
+tags: []
+user_id: abhishu
