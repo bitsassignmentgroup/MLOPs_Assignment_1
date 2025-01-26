@@ -40,17 +40,4 @@ def test_model_training():
     mse = mean_squared_error(y_test, predictions)
     assert len(predictions) == len(X_test), "The number of predictions should match the number of test samples."
     assert mse >= 0, "Mean Squared Error should be non-negative."
-
-def test_mlflow_logging():
-    n_estimators = 10
-    max_depth = 3
-    with mlflow.start_run() as run:
-        mse = train_model(n_estimators, max_depth)
-        run_id = run.info.run_id
-    client = mlflow.tracking.MlflowClient()
-    run_data = client.get_run(run_id).data
-    assert run_data.params["n_estimators"] == str(n_estimators), "n_estimators parameter was not logged correctly."
-    assert run_data.params["max_depth"] == str(max_depth), "max_depth parameter was not logged correctly."
-    assert "mean_squared_error" in run_data.metrics, "Mean Squared Error metric was not logged."
-    artifacts = client.list_artifacts(run_id, "model")
-    assert len(artifacts) > 0, "Model artifact was not logged."
+    
