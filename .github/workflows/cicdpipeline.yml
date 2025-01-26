@@ -16,9 +16,9 @@ jobs:
       VENV: venv
       REQUIREMENTS_FILE: requirements.txt
       LINT_REPORT_DIR: lint_reports
-      MODEL_SCRIPT: housingdatamodel.py
+      MODEL_SCRIPT: diabetesmodel.py
       TEST_SCRIPT: test_script.py
-      IMAGE_NAME: housingpricemodel  # Set your Docker image name (local)
+      IMAGE_NAME: diabetesmodel  # Set your Docker image name (local)
 
     steps:
     # Step 1: Checkout repository
