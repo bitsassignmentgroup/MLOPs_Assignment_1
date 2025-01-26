@@ -4,9 +4,12 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import pandas as pd
+import os
 
 # Set the tracking URI to a local directory
-mlflow.set_tracking_uri("./m2_logs")
+artifact_dir = os.path.join(os.getcwd(), "mlruns")
+os.makedirs(artifact_dir, exist_ok=True)
+mlflow.set_tracking_uri(artifact_dir)
 
 # Create or set an experiment
 mlflow.set_experiment("diabetes_experiment")
