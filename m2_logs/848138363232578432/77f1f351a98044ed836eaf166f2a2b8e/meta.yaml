@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/77f1f351a98044ed836eaf166f2a2b8e/artifacts
+end_time: 1737885736985
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: 77f1f351a98044ed836eaf166f2a2b8e
+run_name: rare-cod-298
+run_uuid: 77f1f351a98044ed836eaf166f2a2b8e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737885731117
+status: 3
+tags: []
+user_id: abhishu

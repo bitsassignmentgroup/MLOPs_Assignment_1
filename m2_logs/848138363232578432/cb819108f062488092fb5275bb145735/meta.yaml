@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/cb819108f062488092fb5275bb145735/artifacts
+end_time: 1737885747239
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: cb819108f062488092fb5275bb145735
+run_name: painted-turtle-625
+run_uuid: cb819108f062488092fb5275bb145735
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737885742217
+status: 3
+tags: []
+user_id: abhishu
