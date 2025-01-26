@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m3_logs/652645159120216488/8341788a113d484f840079e0ddb779a8/artifacts
+end_time: 1737886287984
+entry_point_name: ''
+experiment_id: '652645159120216488'
+lifecycle_stage: active
+run_id: 8341788a113d484f840079e0ddb779a8
+run_name: fun-goat-791
+run_uuid: 8341788a113d484f840079e0ddb779a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737886282997
+status: 3
+tags: []
+user_id: abhishu
