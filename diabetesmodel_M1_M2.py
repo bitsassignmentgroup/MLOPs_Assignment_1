@@ -12,7 +12,7 @@ mlflow.set_tracking_uri("./m2_logs")
 mlflow.set_experiment("diabetes_experiment")
 
 # Load the versioned dataset
-df = pd.read_csv('dataset/diabetes_dataset_v0.csv')
+df = pd.read_csv('dataset/diabetes_dataset_v0 copy.csv')
 
 def train_model(n_estimators, max_depth):
     # Split data
