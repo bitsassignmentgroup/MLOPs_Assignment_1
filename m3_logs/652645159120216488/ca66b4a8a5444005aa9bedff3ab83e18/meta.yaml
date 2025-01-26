@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m3_logs/652645159120216488/ca66b4a8a5444005aa9bedff3ab83e18/artifacts
+end_time: 1737886129393
+entry_point_name: ''
+experiment_id: '652645159120216488'
+lifecycle_stage: active
+run_id: ca66b4a8a5444005aa9bedff3ab83e18
+run_name: delicate-wolf-111
+run_uuid: ca66b4a8a5444005aa9bedff3ab83e18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737886124308
+status: 3
+tags: []
+user_id: abhishu

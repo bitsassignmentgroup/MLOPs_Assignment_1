@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m3_logs/652645159120216488/7a60d17f018a472fa20a7ade26f7d84c/artifacts
+end_time: 1737886311401
+entry_point_name: ''
+experiment_id: '652645159120216488'
+lifecycle_stage: active
+run_id: 7a60d17f018a472fa20a7ade26f7d84c
+run_name: awesome-colt-518
+run_uuid: 7a60d17f018a472fa20a7ade26f7d84c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737886305737
+status: 3
+tags: []
+user_id: abhishu
