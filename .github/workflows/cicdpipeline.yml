@@ -1,0 +1,86 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to main
+  pull_request:
+    branches:
+      - main  # Trigger on pull request to main
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest  # Linux runner
+
+    env:
+      VENV: venv
+      REQUIREMENTS_FILE: requirements.txt
+      LINT_REPORT_DIR: lint_reports
+      MODEL_SCRIPT: housingdatamodel.py
+      TEST_SCRIPT: test_script.py
+      IMAGE_NAME: housingpricemodel  # Set your Docker image name (local)
+
+    steps:
+    # Step 1: Checkout repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m venv ${{ env.VENV }}
+        source ${{ env.VENV }}/bin/activate
+        pip install --upgrade pip
+        pip install -r ${{ env.REQUIREMENTS_FILE }}
+        pip install flake8 flake8-html pytest
+
+    # Step 4: Run linting
+    - name: Run linting
+      run: |
+        source ${{ env.VENV }}/bin/activate
+        mkdir -p ${{ env.LINT_REPORT_DIR }}
+        flake8 --max-line-length=120 --format=html --htmldir=${{ env.LINT_REPORT_DIR }} .
+      continue-on-error: true
+
+    # Step 5: Run tests from test_case.py
+    - name: Run tests
+      run: |
+        source ${{ env.VENV }}/bin/activate
+        pytest ${{ env.TEST_SCRIPT }} --disable-warnings --junitxml=test-results.xml
+
+    # Step 6: Train the model and save it
+    - name: Train and Save Model
+      run: |
+        source ${{ env.VENV }}/bin/activate
+        python ${{ env.MODEL_SCRIPT }}  # This will save the model using joblib
+
+    # Step 7: Build Docker image (locally, no push to registry)
+    - name: Build Docker image
+      run: |
+        docker build -t ${{ env.IMAGE_NAME }} .
+
+    # Step 8: Run the Docker container (locally)
+    - name: Run Docker container
+      run: |
+        docker run -d -p 5000:5000 ${{ env.IMAGE_NAME }}
+
+    # Step 9: Upload linting and test results as artifacts
+    - name: Upload Linting Report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: lint-report
+        path: ${{ env.LINT_REPORT_DIR }}
+
+    - name: Upload Test Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: test-results.xml
