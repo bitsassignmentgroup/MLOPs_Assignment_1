@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/e5940744d5ce427fba43aa7d1ed0fd5f/artifacts
+end_time: 1737876568652
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: e5940744d5ce427fba43aa7d1ed0fd5f
+run_name: hilarious-ram-571
+run_uuid: e5940744d5ce427fba43aa7d1ed0fd5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737876563678
+status: 3
+tags: []
+user_id: abhishu

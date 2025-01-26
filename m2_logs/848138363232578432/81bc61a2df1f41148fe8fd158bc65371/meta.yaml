@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/81bc61a2df1f41148fe8fd158bc65371/artifacts
+end_time: 1737876573427
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: 81bc61a2df1f41148fe8fd158bc65371
+run_name: victorious-wren-190
+run_uuid: 81bc61a2df1f41148fe8fd158bc65371
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737876568654
+status: 3
+tags: []
+user_id: abhishu
