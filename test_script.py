@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Dataset
-df = pd.read_csv('dataset/diabetes_dataset_v0.csv')
+df = pd.read_csv('dataset/diabetes_dataset_v0 copy.csv')
 
 # Function to train the model
 def train_model(n_estimators, max_depth):
