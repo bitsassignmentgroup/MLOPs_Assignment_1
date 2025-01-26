@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/561bf34aa1734d01b369a9a00b63f5ed/artifacts
+end_time: 1737896155950
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: 561bf34aa1734d01b369a9a00b63f5ed
+run_name: thundering-perch-308
+run_uuid: 561bf34aa1734d01b369a9a00b63f5ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737896152700
+status: 3
+tags: []
+user_id: abhishu

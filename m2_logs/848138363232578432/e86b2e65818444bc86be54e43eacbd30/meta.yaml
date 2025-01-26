@@ -1,0 +1,15 @@
+artifact_uri: /home/abhishu/bits/mlops/MLOPs_Assignment_1/m2_logs/848138363232578432/e86b2e65818444bc86be54e43eacbd30/artifacts
+end_time: 1737896149798
+entry_point_name: ''
+experiment_id: '848138363232578432'
+lifecycle_stage: active
+run_id: e86b2e65818444bc86be54e43eacbd30
+run_name: merciful-smelt-229
+run_uuid: e86b2e65818444bc86be54e43eacbd30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737896147193
+status: 3
+tags: []
+user_id: abhishu
